@@ -10,50 +10,154 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet/less" type="text/css" href="./index.scss" />
+
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <nav class="top_bar">
+      <div class="top_bar_container" id="navbarText">
+        <div class="top_bar_option">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="lock-svgrepo-com 1">
+              <g id="Complete">
+                <g id="lock">
+                  <g id="Group">
+                    <path
+                      id="Vector"
+                      d="M15.0002 9.16669H5.00016C4.07969 9.16669 3.3335 9.91288 3.3335 10.8334V15.8334C3.3335 16.7538 4.07969 17.5 5.00016 17.5H15.0002C15.9206 17.5 16.6668 16.7538 16.6668 15.8334V10.8334C16.6668 9.91288 15.9206 9.16669 15.0002 9.16669Z"
+                      stroke="#94CDE6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      id="Vector_2"
+                      d="M13.75 9.16667V6.66667C13.75 4.33333 13.3333 2.5 10 2.5C6.66667 2.5 6.25 4.33333 6.25 6.66667V9.16667"
+                      stroke="#94CDE6"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
 
+          <span>login</span>
+        </div>
+        <div class="top_bar_option">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="user-02-svgrepo-com 1">
+              <g id="User / User_02">
+                <path
+                  id="Vector"
+                  d="M16.6668 17.5C16.6668 15.1988 13.6821 13.3333 10.0002 13.3333C6.31826 13.3333 3.3335 15.1988 3.3335 17.5M10.0002 10.8333C7.69898 10.8333 5.8335 8.96783 5.8335 6.66667C5.8335 4.36548 7.69898 2.5 10.0002 2.5C12.3013 2.5 14.1668 4.36548 14.1668 6.66667C14.1668 8.96783 12.3013 10.8333 10.0002 10.8333Z"
+                  stroke="#94CDE6"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </g>
+          </svg>
+
+          <span>join</span>
+        </div>
+        <div class="top_bar_option">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="add-1-svgrepo-com 1">
+              <path
+                id="Vector"
+                d="M2.5 5.83333C2.5 3.99238 3.99238 2.5 5.83333 2.5H14.1667C16.0076 2.5 17.5 3.99238 17.5 5.83333V14.1667C17.5 16.0076 16.0076 17.5 14.1667 17.5H5.83333C3.99238 17.5 2.5 16.0076 2.5 14.1667V5.83333Z"
+                stroke="#94CDE6"
+                stroke-width="1.5"
+              />
+              <path
+                id="Vector_2"
+                d="M13.5614 9.28142C13.8868 8.95601 13.8868 8.42834 13.5614 8.10292L12.0684 6.60992C11.743 6.28448 11.2153 6.28449 10.8899 6.60992L7.46737 10.0324L6.95622 13.1231C6.94691 13.1795 6.99579 13.2283 7.05216 13.2189L10.1389 12.704L13.5614 9.28142Z"
+                stroke="#94CDE6"
+                stroke-width="1.5"
+              />
+            </g>
+          </svg>
+
+          <span>add your rehab</span>
+        </div>
+      </div>
+    </nav>
+
+    <div class="navbar navbar-expand-lg flex-row  p-lg-3">
+      <div class="container-fluid flex-row justify-content-between align-items-center">
+        <img class="navbar-brand" src="../Rehab_directory/assests/logo.png"/>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
+            <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Find A Rehab</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Rehab programs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">addiction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact us</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <button type="button" class="btn btn-outline-danger"><span><img src="../Rehab_directory/assests/Phone.png" alt=""></span>424-799-3863</button>
+          </form>
+        </div>
+      </div>
+    </div>
+<main>
+  <section class="section_one">
+    <div class="section_one_container">
+      <div class="section_one_content"></div>
+    </div>
+  </section>
+</main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
