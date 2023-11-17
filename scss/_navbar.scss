@@ -1,0 +1,31 @@
+.navbar {
+  .container-fluid {
+    gap: 8px;
+    img {
+      height: 50px;
+    }
+    .toggle_content {
+      li {
+        padding: 24px 8px 0;
+        a {
+          display: block;
+          color: $blue-23;
+          text-transform: uppercase;
+          font-size: small;
+          font-weight: 500;
+          line-height: 21px;
+          letter-spacing: 1.4px;
+          word-wrap: break-word;
+          &.active {
+            border-bottom: 3px solid $red-52;
+            padding-bottom: 40px;
+            color: $blue-51;
+          }
+          &:hover{
+            color:$blue-51;
+          }
+        }
+      }
+    }
+  }
+}

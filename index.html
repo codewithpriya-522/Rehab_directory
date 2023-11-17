@@ -10,16 +10,15 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./dist/css/style.css" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-    <link rel="stylesheet/less" type="text/css" href="./index.scss" />
-
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
     
   </head>
   <body>
     <nav class="top_bar">
-      <div class="top_bar_container" id="navbarText">
+      <div class="top_bar_container " id="navbarText">
+        <div class="top_bar_options_list d-flex p-2 justify-content-end">
         <div class="top_bar_option">
           <svg
             width="20"
@@ -107,11 +106,14 @@
           <span>add your rehab</span>
         </div>
       </div>
+      </div>
     </nav>
 
-    <div class="navbar navbar-expand-lg flex-row  p-lg-3">
-      <div class="container-fluid flex-row justify-content-between align-items-center">
-        <img class="navbar-brand" src="../Rehab_directory/assests/logo.png"/>
+    <div class="navbar navbar-expand-lg flex-row p-lg-3">
+      <div
+        class=" container-fluid flex-row justify-content-between align-items-center"
+      >
+        <img class="navbar-brand" src="./assests/logo.png" />
         <button
           class="navbar-toggler"
           type="button"
@@ -121,14 +123,26 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 50 50">
-            <path d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"></path>
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="30"
+            height="30"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+            ></path>
+          </svg>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="toggle_content collapse navbar-collapse" id="navbarSupportedContent">
+          
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Find A Rehab</a>
+              <a class="nav-link active" aria-current="page" href="#"
+                >Find A Rehab</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">About Us</a>
@@ -147,65 +161,42 @@
             </li>
           </ul>
           <form class="d-flex">
-            <button type="button" class="btn btn-outline-danger"><span><img src="../Rehab_directory/assests/Phone.png" alt=""></span>424-799-3863</button>
+            <button type="button" class="btn btn-outline-danger">
+              <span
+                ><img src="../Rehab_directory/assests/Phone.png" alt="" /></span
+              >424-799-3863
+            </button>
           </form>
         </div>
       </div>
     </div>
-<main>
-  <section class="section_one">
-    <div class="section_one_container w-100 p-5 m-0">
-      <div class="section_one_content">
-        <h1 class="section_one_heading text-white text-center  ">Find Alcohol & Drug Rehab Centers Near You!</h1>
-        <p style="color: #fff;
-        text-align: center;
-        font-size: 28px;
-        font-weight: 500;
-        line-height: 150%;
-        text-transform: capitalize;">Directory Of Addiction Treatment Centers in State name</p>
-        <div class="search-box" style="margin-top: 60px;
-        padding: 24px;
-        display: flex;
-        gap: 24px;
-        border-radius: 5px;
-        background: #fff;
-        box-shadow: 4px 4px 55px 0px rgba(0, 0, 0, 0.12);
-    ">
-          <div class="input-group" style="display: flex;
-          flex-direction: column;
-          gap: 6px;
-          width: 100%;">
-            <label for="" style="color: #232323;
-            font-size: 18px;
-            font-weight: 600;
-            line-height: 150%;
-            text-transform: capitalize;">Search by location</label>
-            <input style="padding: 12px 0px;
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 150%;
-            color: #232323;
-            outline: none;
-            border: none;
-            position: relative;" type="text" placeholder="Enter City Name">
+    
+    <main>
+      <section class="section_one">
+        <div class="section_one_container w-100 p-5 m-0">
+          <div class="section_one_content">
+            <h1 class="section_one_heading text-white text-center">
+              Find Alcohol & Drug Rehab Centers Near You!
+            </h1>
+            <p class="section_one_sub_heading">
+              Directory Of Addiction Treatment Centers in State name
+            </p>
+            <div class="search-box">
+              <div class="input-group">
+                <label class="lblSearch" for="">Search by location</label>
+                <input
+                  class="search_input"
+                  type="text"
+                  placeholder="Enter City Name"
+                />
+              </div>
+              <button class="search_btn">Search</button>
+            </div>
           </div>
-          <button style="padding: 29px 60px;
-          border-radius: 5px;
-          background: #d45352;
-          color: #fff;
-          font-size: 18px;
-          font-weight: 700;
-          line-height: 130%;
-          letter-spacing: 2.52px;
-          text-transform: uppercase;
-          overflow: visible;
-          border: none;
-          box-sizing: border-box;" class="search-button">Search</button>
         </div>
-      </div>
-    </div>
-  </section>
-</main>
+      </section>
+      
+    </main>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

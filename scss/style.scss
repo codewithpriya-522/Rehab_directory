@@ -1,0 +1,117 @@
+@import "./variables";
+@import "./mixins";
+@import "./topbar";
+@import "./navbar";
+@import "./section-one";
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $default-font;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1210px;
+  width: 100%;
+  @media screen and (max-width: 1600px) {
+    width: 90%;
+    max-width: 1210px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
+  @media screen and (max-width: 375px) {
+    width: 100%;
+    // max-width: 343px;
+  }
+
+  &.small-container {
+    max-width: 955px;
+    width: 100%;
+    @media screen and (max-width: 1600px) {
+      width: 90%;
+    }
+    @media screen and (max-width: 1200px) {
+      width: 95%;
+    }
+    @media screen and (max-width: 375px) {
+      width: 95%;
+      max-width: 343px;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: $default-font;
+  font-weight: 500;
+}
+a {
+  // color: $black-18;
+  text-decoration: none;
+  outline: 0;
+  &:hover {
+    text-decoration: none;
+  }
+}
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: none;
+}
+strong {
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  outline: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  // &.custom-select2{
+  //   background: url(../../assets/icons/dropdown.svg) no-repeat right 0 center;
+  // }
+}
+.form-control {
+  border: none;
+  &:focus {
+    box-shadow: none;
+  }
+}
+.no-margin {
+  margin: 0;
+}
+.scrollable {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.p-0 {
+  padding: 0;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}

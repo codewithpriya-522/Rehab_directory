@@ -1,0 +1,30 @@
+.top_bar {
+  background: $blue-51;
+  height: 6vh;
+  padding: 11px 0;
+  @include display-justify-end;
+  .top_bar_container {
+    padding: 0 16px;
+    width: 100%;
+    max-width: 1548px;
+    .top_bar_options_list {
+      color: $white-ff;
+      gap: 40px;
+      @media screen and (max-width: 768px) {
+        gap: 16px;
+      }
+      .top_bar_option {
+        gap: 8px;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 150%;
+        span {
+          font-size: 13px;
+          @media screen and (max-width: 768px) {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,193 @@
+.top_bar {
+  background: #102451;
+  height: 6vh;
+  padding: 11px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top_bar .top_bar_container {
+  padding: 0 16px;
+  width: 100%;
+  max-width: 1548px;
+}
+.top_bar .top_bar_container .top_bar_options_list {
+  color: #ffffff;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .top_bar .top_bar_container .top_bar_options_list {
+    gap: 16px;
+  }
+}
+.top_bar .top_bar_container .top_bar_options_list .top_bar_option {
+  gap: 8px;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 150%;
+}
+.top_bar .top_bar_container .top_bar_options_list .top_bar_option span {
+  font-size: 13px;
+}
+@media screen and (max-width: 768px) {
+  .top_bar .top_bar_container .top_bar_options_list .top_bar_option span {
+    font-size: 10px;
+  }
+}
+
+.navbar .container-fluid {
+  gap: 8px;
+}
+.navbar .container-fluid img {
+  height: 50px;
+}
+.navbar .container-fluid .toggle_content li {
+  padding: 24px 8px 0;
+}
+.navbar .container-fluid .toggle_content li a {
+  display: block;
+  color: #232323;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 1.4px;
+  word-wrap: break-word;
+}
+.navbar .container-fluid .toggle_content li a.active {
+  border-bottom: 3px solid #d45352;
+  padding-bottom: 40px;
+  color: #102451;
+}
+.navbar .container-fluid .toggle_content li a:hover {
+  color: #102451;
+}
+
+.section_one {
+  background-image: url("../assests/sectionOneBgImg.png");
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Helvetica";
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1210px;
+  width: 100%;
+}
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 90%;
+    max-width: 1210px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 100%;
+  }
+}
+.container.small-container {
+  max-width: 955px;
+  width: 100%;
+}
+@media screen and (max-width: 1600px) {
+  .container.small-container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container.small-container {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container.small-container {
+    width: 95%;
+    max-width: 343px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Helvetica";
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.btn.focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+textarea {
+  resize: none;
+}
+
+input {
+  outline: none;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-control {
+  border: none;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.scrollable {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.p-0 {
+  padding: 0;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}/*# sourceMappingURL=style.css.map */
