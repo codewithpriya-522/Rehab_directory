@@ -1,0 +1,38 @@
+.section_one{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}  
+.section_one_heading,
+.section_one_sub_heading,
+.lblSearch,
+.search_input,
+.search_btn {
+    color: white;
+}
+.section_one_content{
+    .section_one_heading{
+
+    }
+    .section_one_sub_heading{
+
+    }
+    .search-box{
+        .input-group{
+            .lblSearch{
+
+            }
+            .search_input{
+
+            }
+        }
+        .search_btn{
+            
+        }
+    }
+}

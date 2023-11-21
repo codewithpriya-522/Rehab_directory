@@ -42,7 +42,7 @@
   height: 50px;
 }
 .navbar .container-fluid .toggle_content li {
-  padding: 24px 8px 0;
+  padding: 30px 0px 0;
 }
 .navbar .container-fluid .toggle_content li a {
   display: block;
@@ -64,7 +64,21 @@
 }
 
 .section_one {
-  background-image: url("../assests/sectionOneBgImg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150vh; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_one_heading,
+.section_one_sub_heading,
+.lblSearch,
+.search_input,
+.search_btn {
+  color: white;
 }
 
 html,
