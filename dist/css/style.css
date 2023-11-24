@@ -35,6 +35,9 @@
   }
 }
 
+.navbar {
+  padding: 0;
+}
 .navbar .container-fluid {
   gap: 8px;
 }
@@ -81,6 +84,15 @@
   color: white;
 }
 
+.section_one_content .section_one_heading {
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 130%;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
 html,
 body {
   height: 100%;
