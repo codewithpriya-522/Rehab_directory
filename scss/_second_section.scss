@@ -1,6 +1,6 @@
 .second_section {
   background-color: #f4f6f8;
-  isolation: isolate;
+  
 
   .main_container {
     width: 100%;
@@ -10,7 +10,7 @@
     border-width: 0;
     border-style: solid;
     border-color: #e2e8f0;
-
+    padding-block: 100px;
     .heading {
       position: relative;
       margin-bottom: 50px;
@@ -180,5 +180,20 @@
     padding: 12px;}
     }
   }
+  ::after{
+  content: "";
+    display: block;
+    width: 616px;
+    height: 616px;
+    border-radius: 50%;
+    background: #fff;
+    filter: blur(260px);
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    pointer-events: none;
+    z-index: -999;}
   }
 }
