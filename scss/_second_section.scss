@@ -1,6 +1,5 @@
 .second_section {
   background-color: #f4f6f8;
-  
 
   .main_container {
     width: 100%;
@@ -12,13 +11,10 @@
     border-color: #e2e8f0;
     padding-block: 100px;
     .heading {
-      position: relative;
       margin-bottom: 50px;
-
       @media screen and (max-width: 768px) {
         margin-bottom: 25px;
       }
-
       h6 {
         color: #205081;
         text-align: center;
@@ -26,55 +22,54 @@
         font-weight: 600;
         line-height: 130%;
         letter-spacing: 9px;
-
+        text-transform: uppercase;
         @media screen and (max-width: 768px) {
-          font-size: 10px;
+          margin-bottom: 11px;
         }
       }
-
       h1 {
         color: #232323;
         text-align: center;
         font-size: 40px;
         font-weight: 700;
         line-height: 150%;
+        text-transform: capitalize;
         padding-bottom: 20px;
-
+        position: relative;
         @media screen and (max-width: 768px) {
           font-size: 24px;
           line-height: 130%;
           padding-bottom: 8px;
         }
-      }
-
-      ::after {
-        content: "";
-        display: block;
-        width: 100px;
-        height: 2px;
-        background-color: #d45352;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
+        &::after {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 2px;
+          background-color: #d45352;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
       }
     }
 
     .card_container {
       display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
-    
-    @media screen and (max-width: 1200px) {
-      grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
-    }
-    @media screen and (max-width: 768px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media screen and (max-width: 480px) {
-      grid-template-columns: repeat(1, 1fr);
-    }
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+
+      @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+      }
+      @media screen and (max-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media screen and (max-width: 480px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
       .each_card {
         margin: 0;
         padding: 0;
@@ -92,7 +87,7 @@
           }
           img {
             max-width: 90%;
-            background:transparent;
+            background: transparent;
             @media screen and (max-width: 768px) {
               width: 40%;
             }
@@ -165,35 +160,22 @@
         top: 14px;
       }
     }
-    .button_section{
-      button{
-      padding: 20px 50px;
-    border-radius: 5px;
-    border: 1px solid #d45352;
-    color: #d45352;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 130%;
-    letter-spacing: 2.24px;
-    @media screen and (max-width: 768px) {
-    font-size: 12px;
-    padding: 12px;}
+    .button_section {
+      button {
+        padding: 20px 50px;
+        border-radius: 5px;
+        border: 1px solid #d45352;
+        color: #d45352;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 2.24px;
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+          padding: 12px;
+        }
+      }
     }
-  }
-  ::after{
-  content: "";
-    display: block;
-    width: 616px;
-    height: 616px;
-    border-radius: 50%;
-    background: #fff;
-    filter: blur(260px);
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 0;
-    pointer-events: none;
-    z-index: -999;}
+   
   }
 }

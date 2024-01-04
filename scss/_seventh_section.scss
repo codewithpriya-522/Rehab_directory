@@ -1,0 +1,121 @@
+.seventh_section {
+  background: #f4f6f8;
+  .main_container {
+    width: 100%;
+    max-width: 1548px;
+    padding: 0 16px;
+    margin: 0 auto;
+    .heading {
+      margin-bottom: 50px;
+      @media screen and (max-width: 768px) {
+        margin-bottom: 25px;
+      }
+      h6 {
+        color: #205081;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 9px;
+        text-transform: uppercase;
+        @media screen and (max-width: 768px) {
+          margin-bottom: 11px;
+        }
+      }
+      h1 {
+        color: #232323;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 150%;
+        text-transform: capitalize;
+        padding-bottom: 20px;
+        position: relative;
+        @media screen and (max-width: 768px) {
+          font-size: 24px;
+          line-height: 130%;
+          padding-bottom: 8px;
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 100px;
+          height: 2px;
+          background-color: #d45352;
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    .city_content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      @media screen and (max-width: 1080px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      @media screen and (max-width: 768px) {
+        gap: 15px;
+      }
+      @media screen and (max-width: 576px) {
+        grid-template-columns: 100%;
+      }
+      a {
+        border-radius: 3px;
+        border: 1px solid #ced6dd;
+        padding: 16px 30px;
+        padding-right: 60px;
+        color: #232323;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 140%;
+        text-transform: capitalize;
+
+        @media screen and (max-width: 768px) {
+          padding: 16px;
+          padding-right: 45px;
+          font-size: 14px;
+        }
+
+        &:hover {
+          background: url(../../dist/assests/white_right_arrow.png) no-repeat
+            right 50px center;
+            transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+          //  background-image: url(../../dist/assests/white_right_arrow.png);
+          // background-repeat: no-repeat;
+          // background-position: right center;
+          cursor: pointer;
+          background-color: #205081;
+          border-radius: 3px;
+          box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.11);
+          border: 1px solid #205081;
+          color: white;
+        }
+      }
+    }
+    .button_container {
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      button {
+        padding: 20px 50px;
+        border-radius: 5px;
+        border: 1px solid #d45352;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 130%;
+        letter-spacing: 2.24px;
+        text-transform: uppercase;
+        background-color: #d45352;
+        @media screen and (max-width: 768px) {
+          font-size: 12px;
+          padding: 12px;
+        }
+      }
+    }
+  }
+}
