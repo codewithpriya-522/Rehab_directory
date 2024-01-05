@@ -1,6 +1,17 @@
 .find_rehab_center{
-    height: 100px;
+    width: 100%;
+    height: 123px;
     background: #d45352;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 130%;
     letter-spacing: 2.52px;
+    text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+    height: 60px;
+    font-size: 14px;}
 }

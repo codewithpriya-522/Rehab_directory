@@ -1,0 +1,85 @@
+.eight_section {
+  // background: url(../../dist/assests/imgSectionEight.png) no-repeat center center ;
+  background: url(../../dist/assests/imgSectionEight.png) no-repeat center
+    center;
+  background-color: #205081;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block: 140px;
+  .main_container {
+    width: 100%;
+    max-width: 1548px;
+    padding: 0 16px;
+    margin: 0 auto;
+    .content {
+      max-width: 808px;
+      margin-inline: auto;
+      h1 {
+        color: #fff;
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 130%;
+        text-transform: capitalize;
+        margin-bottom: 18px;
+        @media screen and (max-width: 768px) {
+          font-size: 28px;
+        }
+      }
+      h6 {
+        color: #fff;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 150%;
+        text-transform: capitalize;
+        margin-top: 16px;
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+          margin-top: 8px;
+        }
+      }
+      .button_content {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        @media screen and (max-width: 768px) {
+          gap: 8px;
+          margin-top: 24px;
+        }
+        .btnText {
+          padding: 20px 50px;
+          border-radius: 5px;
+          background-color: #d45352;
+          border: 1px solid #d45352;
+          color: #ffffff;
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 130%;
+          letter-spacing: 2.24px;
+          text-transform: uppercase;
+          @media screen and (max-width: 768px) {
+            font-size: 12px;
+            padding: 12px;
+          }
+        }
+        .btnContact {
+          border-radius: 5px;
+          border: 1px solid #fff;
+          background-color: transparent;
+          color: #fff;
+          padding: 16px 30px;
+          padding: 12px 30px;
+          display: flex;
+          align-items: center;
+          gap: 13px;
+          @media screen and (max-width: 768px) {
+            padding: 12px;
+          }
+          
+        }
+      }
+    }
+  }
+}
