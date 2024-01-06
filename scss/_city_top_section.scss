@@ -1,0 +1,22 @@
+.city_top_section{
+    background: url(/dist/assests/cityPageAssests/city_top_bg.png) no-repeat center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 570px;
+    @media screen and (max-width:768px) {
+        height: 350px;
+    }
+    h1{
+        color: #fff;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 130%;
+    text-transform: capitalize;
+    @media screen and (max-width:768px) {
+        font-size: 25px;
+    }
+    }
+}
